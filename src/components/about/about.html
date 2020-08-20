@@ -1,0 +1,10 @@
+<template>
+  <div class="a1-ltr a1-column a1-padding">
+    <h1>What we need in the package?</h1>
+    <h3 if.bind="attached_isBusy">Features Loading...</h3>
+    <ul>
+      <li repeat.for="feature of features">${feature}</li>
+    </ul>
+    <a route-href="home">Home</a>
+  </div>
+</template>
